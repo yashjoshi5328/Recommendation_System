@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", Times, serif;
+        }
+        body header h1{
+            padding-left: 1rem;
+        }
+        .searchbar{
+            background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d9d7ad104360973.5f6142500e188.png');
+            /* background-image: url("{{ url_for('static', filename='background.jpg') }}"); */
+
+            background-color: #002244;
+            box-sizing: border-box;
+            height: 20rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items: center;
+        }
+        .searchbar input{
+            height: 2.5em;
+            width:50em;
+            box-sizing: border-box;
+        }
+        .rbtn {
+            background: transparent;
+            margin: 1rem;
+        }
+        .fa-4x {
+            color:aliceblue;
+            font-size: 1.8rem;
+            background-color:black ;
+        }
+        .container{
+            margin: 10rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+        footer{
+            background-color:#002244;
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recommedation System via TF-IDF</h1>
+    </header>
+    <main>
+            <form class="searchbar" action='/recommend' method="POST">
+                <input type="text" name="title" placeholder="Search..." >
+                <button type="submit" class ="rbtn"><i class="fa fa-search fa_custom fa-4x"></i></button>
+            </form>
+        <div class="container">
+                <h1>MOVIE NOT FOUND</h1>
+        </div>
+    </main>
+    <footer>
+        <p>Made by Yash Joshi and Tushar Bhatt</p>
+    </footer>
+</body>
+</html>
