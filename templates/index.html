@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <style>
         body{
+            background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/b4c7f092-0488-48b7-854d-ca055a84fb4f/5b22968d-b94f-44ec-bea3-45dcf457f29e/IN-en-20231204-popsignuptwoweeks-perspective_alpha_website_large.jpg');
             background-color: black;
             color: white;
             margin: 0;
@@ -22,12 +23,16 @@
             /* background-image: url("{{ url_for('static', filename='background.jpg') }}"); */
 
             background-color: #002244;
+            opacity: 0.9;
             box-sizing: border-box;
             height: 20rem;
             display: flex;
             flex-wrap: wrap;
             justify-content:center;
             align-items: center;
+        }
+        .searchbar:hover{
+            opacity: 1;
         }
         .searchbar input{
             height: 2.5em;
@@ -43,13 +48,20 @@
             font-size: 1.8rem;
             background-color:black ;
         }
-        .container img{
-            width: 100%;
-        }
+        /* .container img{
+            width:100%;
+            opacity: 0.8;
+            width:50%;
+            z-index: -1;
+        } */
         footer{
             background-color:#002244;
             height: 2rem;
-            display: flex;
+            margin-top:23% ;
+        
+        }
+        footer p{
+            display:flex;
             justify-content: center;
             align-items: center;
         }
@@ -66,7 +78,7 @@
                 <button type="submit" class ="rbtn"><i class="fa fa-search fa_custom fa-4x"></i></button>
             </form>
         <div class="container">
-            <img src="https://cdnb.artstation.com/p/assets/images/images/023/138/759/original/helena-viana-anime-girl-welcome-by-ell.gif?1578239624" alt="">
+            <img src="" alt="">
         </div>
     </main>
     <footer>
