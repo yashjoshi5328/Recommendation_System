@@ -27,7 +27,7 @@ def recommend():
         x=1
         n=1713
         for i in movies['title']:
-            if i==title:
+            if i==title or i.lower()==title.lower():
                 break;
             x+=1
         if x>=n:
